@@ -10,8 +10,9 @@ manager = employees.Manager(101, "Raj", 1000)
 developer = employees.developer(102, "sri", 1000)
 salesman = employees.salesman(103,"Ram", 1000,1500)
 worker = employees.Worker(104, "Sam", 10,2500)
+consultant = employees.consultant(105, "Lucky", 60, 5)
 
-employees = [manager,developer,salesman,worker]
+employees = [manager,developer,salesman,worker,consultant]
 
 ems = EmployeeManagement.PerformanceManager()
 ems.track(employees,40)

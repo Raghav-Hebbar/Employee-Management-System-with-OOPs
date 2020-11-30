@@ -53,3 +53,9 @@ class Worker(PartTimeEmployee):
         print(f"{self.name} as worker has completed his task in {hours} hours")
 
 
+class consultant(developer, PartTimeEmployee):
+    def __init__(self,id,name,total_hours,rate_per_hour):
+        PartTimeEmployee.__init__(self,id,name,total_hours,rate_per_hour)
+
+    def calculate_payroll(self):
+        return PartTimeEmployee.calculate_payroll(self)
